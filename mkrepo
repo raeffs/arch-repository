@@ -1,0 +1,32 @@
+#!/bin/sh
+
+set -e
+
+# If there's an argument we only want to build that package.
+only="$1"
+
+rootdir="$PWD/root"
+
+repodir="$(realpath repo)"
+reponame="j--repo"
+
+package() {
+    pkg="$1"
+    [ -n "$only" ] && [ "$only" != "$pkg" ] && return
+    echo "++ Building package $pkg..."
+    (
+        cd "$pkg"
+        rm -f *.pkg.tar.zst
+        makechrootpkg -c -u -r "$rootdir" -D "$repodir"
+    )
+    pkgfile="$(basename $(ls $pkg/*.pkg.tar.zst))"
+    cp "$pkg/$pkgfile" "$repodir/"
+    repo-add "$repodir/$reponame.db.tar.zst" "$repodir/$pkgfile"
+}
+
+mkdir -p "$rootdir"
+mkdir -p "$repodir"
+
+[ -d "$rootdir/root" ] || mkarchroot -C /etc/pacman.conf "$rootdir/root" base-devel
+
+package fonts-noto
