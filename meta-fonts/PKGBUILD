@@ -1,8 +1,9 @@
 pkgname=raeffs-meta-fonts
 pkgver=1
-pkgrel=1
+pkgrel=2
 pkgdesc='Fonts'
 arch=('any')
 depends=(
     raeffs-fonts-noto
+    ttf-fantasque-nerd
 )
