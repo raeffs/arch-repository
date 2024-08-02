@@ -1,0 +1,11 @@
+*.tar.xz
+*.tar.xz.sig
+*.tar.gz
+*.tar.gz.sig
+*.tar.zst
+*.tar.zst.sig
+*.zip
+*.log
+
+/pkgbuild-root
+/repo
