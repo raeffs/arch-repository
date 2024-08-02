@@ -5,10 +5,10 @@ set -e
 # If there's an argument we only want to build that package.
 only="$1"
 
-rootdir="$PWD/root"
+rootdir="$PWD/pkgbuild-root"
 
 repodir="$(realpath repo)"
-reponame="j--repo"
+reponame="raeffs-arch-repository"
 
 package() {
     pkg="$1"
