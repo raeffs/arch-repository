@@ -5,9 +5,9 @@ set -e
 # If there's an argument we only want to build that package.
 only="$1"
 
-rootdir="$PWD/pkgbuild-root"
+rootdir="$PWD/root"
 
-repodir="$(realpath repo)"
+repodir="$(realpath repository)"
 reponame="raeffs-arch-repository"
 
 package() {
@@ -17,7 +17,7 @@ package() {
     (
         cd "$pkg"
         rm -f *.pkg.tar.zst
-        makechrootpkg -c -u -r "$rootdir" -D "$repodir"
+        makechrootpkg -c -u -r "$rootdir" -D "$repodir" -- -c
     )
     pkgfile="$(basename $(ls $pkg/*.pkg.tar.zst))"
     cp "$pkg/$pkgfile" "$repodir/"
