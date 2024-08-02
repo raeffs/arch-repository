@@ -17,7 +17,7 @@ package() {
     (
         cd "$pkg"
         rm -f *.pkg.tar.zst
-        makechrootpkg -c -u -r "$rootdir" -D "$repodir" -- -c
+        makechrootpkg -c -u -r "$rootdir" -D "$repodir"
     )
     pkgfile="$(basename $(ls $pkg/*.pkg.tar.zst))"
     cp "$pkg/$pkgfile" "$repodir/"
@@ -30,3 +30,5 @@ mkdir -p "$repodir"
 [ -d "$rootdir/root" ] || mkarchroot -C /etc/pacman.conf "$rootdir/root" base-devel
 
 package fonts-noto
+
+package meta-fonts
