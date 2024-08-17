@@ -32,3 +32,9 @@ mkdir -p "$repodir"
 package fonts-noto
 
 package meta-fonts
+
+rm "$repodir/raeffs-arch-repository.db"
+mv "$repodir/raeffs-arch-repository.db.tar.zst" "$repodir/raeffs-arch-repository.db"
+
+rm "$repodir/raeffs-arch-repository.files"
+mv "$repodir/raeffs-arch-repository.files.tar.zst" "$repodir/raeffs-arch-repository.files"
