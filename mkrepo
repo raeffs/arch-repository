@@ -31,6 +31,9 @@ mkdir -p "$repodir"
 
 package fonts-noto
 
+package gnome-shell-extension-blur-my-shell
+package gnome-shell-extension-dash-to-dock
+
 package meta-fonts
 
 rm "$repodir/raeffs-arch-repository.db"

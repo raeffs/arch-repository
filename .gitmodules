@@ -1,0 +1,6 @@
+[submodule "gnome-shell-extension-blur-my-shell"]
+	path = gnome-shell-extension-blur-my-shell
+	url = https://aur.archlinux.org/gnome-shell-extension-blur-my-shell.git
+[submodule "gnome-shell-extension-dash-to-dock"]
+	path = gnome-shell-extension-dash-to-dock
+	url = https://aur.archlinux.org/gnome-shell-extension-dash-to-dock.git
