@@ -1,0 +1,9 @@
+pkgname=raeffs-meta-gnome-desktop
+pkgver=1
+pkgrel=1
+pkgdesc='Gnome Desktop'
+arch=('any')
+depends=(
+    gnome-shell-extension-blur-my-shell
+    gnome-shell-extension-dash-to-dock
+)

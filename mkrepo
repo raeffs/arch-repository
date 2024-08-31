@@ -35,6 +35,7 @@ package gnome-shell-extension-blur-my-shell
 package gnome-shell-extension-dash-to-dock
 
 package meta-fonts
+package meta-gnome-desktop
 
 rm "$repodir/raeffs-arch-repository.db"
 mv "$repodir/raeffs-arch-repository.db.tar.zst" "$repodir/raeffs-arch-repository.db"
