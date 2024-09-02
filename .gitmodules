@@ -4,3 +4,12 @@
 [submodule "gnome-shell-extension-dash-to-dock"]
 	path = gnome-shell-extension-dash-to-dock
 	url = https://aur.archlinux.org/gnome-shell-extension-dash-to-dock.git
+[submodule "gnome-shell-extension-impatience"]
+	path = gnome-shell-extension-impatience
+	url = https://aur.archlinux.org/gnome-shell-extension-impatience.git
+[submodule "gnome-shell-extension-just-perfection-desktop"]
+	path = gnome-shell-extension-just-perfection-desktop
+	url = https://aur.archlinux.org/gnome-shell-extension-just-perfection-desktop.git
+[submodule "gnome-shell-extension-lockkeys-git"]
+	path = gnome-shell-extension-lockkeys-git
+	url = https://aur.archlinux.org/gnome-shell-extension-lockkeys-git.git

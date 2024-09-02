@@ -33,6 +33,10 @@ package fonts-noto
 
 package gnome-shell-extension-blur-my-shell
 package gnome-shell-extension-dash-to-dock
+package gnome-shell-extension-impatience
+package gnome-shell-extension-just-perfection-desktop
+package gnome-shell-extension-lockkeys-git
+package gnome-shell-extension-tilingshell
 
 package meta-fonts
 package meta-gnome-desktop
